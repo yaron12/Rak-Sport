@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8">
+		
+		<meta name="author" content="yaron">
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div class="wrap">
+			<div>
+				<header>
+					<div class="topHeader">
+						<nav>
+							<ul>
+								<li>
+									<a href="#leageStatus">טבלה</a>
+								</li>
+								<li>
+									<a href="#games">משחקים</a>
+								</li>
+								<li>
+									<a href="#teams">חדשות הספורט</a>
+								</li>
+								<li>
+									<a href="#statistics">סטטיסטיקה</a>
+								</li>
+
+							</ul>
+						</nav>
+					</div>
+
+					<div class="dateTime">
+						<iframe src="http://free.timeanddate.com/clock/i5bt8v2b/n1514/tlil/fceee/tct/pct/tt1/tw0/td2" frameborder="0" width="132" height="18" allowTransparency="true"></iframe>
+						<!--<iframe src="http://free.timeanddate.com/clock/i5bt44wg/n1514/szw110/szh110/hoc09f/hbw0/hfc09f/cf100/hnce1ead6/fas30/fdi66/mqc000/mql15/mqw4/mqd98/mhc000/mhl15/mhw4/mhd98/mmc000/mml10/mmw1/mmd98/hhs2/hms2/hsv0" frameborder="0" width="110" height="110"></iframe>-->
+						<br>
+						<br>
+						<br>
+					</div>
+
+				</header>
+
+			</div>
+		</div>
+		
+		<ng-view></ng-view>
+
+		<footer>
+			<p class="copyrighting">
+				&copy; Copyright  by yaron
+			</p>
+		</footer>
+		<script src="node_modules/angular/angular.js"></script>
+		<script src="node_modules/angular-route/angular-route.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/route.js"></script>
+		<script src="App/Controllers/teams.js"></script>
+		<script src="App/Controllers/news.js"></script>
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>	
+		
+	</body>
+</html>

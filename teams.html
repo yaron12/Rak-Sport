@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<title>חדשות הספורט</title>
+
+<div ng-controller="news" data-ng-init="getData()">
+<div ng-show="loading" class="loading"> <br><br><br><br><br><br><br><br>
+	<h1 style="color: white;text-align: center">טוען  </h1>  </div>
+	
+	<ul style="direction: rtl;width: 62%;margin: 0 auto;background: rgba(0, 0, 0, 0.4);">
+		<li ng-repeat="d in data1 | limitTo:17" style="color: white">
+			<div class="articleNews">
+				<aside>
+					<img ng-src={{d.Image["0"].src}}  alt="{{d.data["0"].group["0"].Image["0"].alt}}">
+				</aside>
+				<h3>{{d["F14b link"]["0"].text}}</h3> </a> <h4>{{d["Gray link"]["0"].text}}</h4> </a>
+			</div>
+		</li>
+	</ul>
+</div>
+
+
+<!--
+	<div class="loading"><h1 style="color: white;text-align: center">טוען את הדף...נא המתן</h1></div>
+			<div class="articleNews" style="direction: rtl;display:inline-block">
+				<aside  style="float:right">
+					<a href="{{d.data["0"].group["1"]["Image"]["0"].href}}" target="_blank"> <img ng-src={{d.data["0"].group[1].Image["0"].src}} width="280" height="150" alt="{{d.data["0"].group["1"].Image["0"].alt}}"> </a>
+				</aside>
+				<b><a href="{{d.data["0"].group["1"]["F14b link"]["0"].href}}" target="_blank"> <h2>{{d.data["0"].group["1"]["F14b link"]["0"].text}}</h2> </a></b>
+				<a href="{{d.data["0"].group["1"]["Gray link"]["0"].href}}" target="_blank"> <h4>{{d.data["0"].group["1"]["Gray link"]["0"].text}}</h4> </a>
+			</div>
+			<hr>
+			
+				<tbody ng-repeat="t in myTablePoints1 ">
+					<tr class="teams-up">
+
+						<td class="iposition">{{$index + 1}}</td>
+						<td class="name">
+							
+							</td>
+						<td>{{t.wins}}</td>
+							<td>{{t.gamesPlayed}}</td>
+								<td>bbb(t)</td>
+					</tr>
+				</tbody>
+			
+			
+		</li>
+
+	</ul>
+
+</div>
+
+<div>
+
+	<li ng-controller="israeliLeage">
+		<div ng-repeat="t in myTeams" class="table">
+			<a href="{{t.link}}" target="_blank"> <img ng-src="img/{{t.img}}" width="60" height="60" title="{{t.name}}">
+			<p>
+				{{t.name}}
+			</p> </a>
+			</div>
+	</li>
+</div>
+-->
