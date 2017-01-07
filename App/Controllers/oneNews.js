@@ -1,8 +1,8 @@
 (function() {
 	var app = angular.module("app");
-	app.controller("news", news);
+	app.controller("oneNews", oneNews);
 
-	function news($scope, $http) {
+	function oneNews($scope, $http) {
 
 		$scope.getData = function() {
 			$scope.loading=true;
