@@ -3,20 +3,16 @@
 	function route($routeProvider) {
 		$routeProvider
 		.when('/', {
-			templateUrl : 'App/view/leageStatus.html'
+			templateUrl : 'App/View/teams.html'
+			
 
-		}).when('/teams', {
-			templateUrl : 'App/view/teams.html'
-			//controller : "contactUs"
-			//template:"<h1>this is about page</h1>"
-
-		}).when('/statistics', {
-			templateUrl : 'App/view/statistics.html'
+	/*	}).when('/statistics', {
+			templateUrl : 'App/View/statistics.html'
 
 		}).when('/games', {
-			templateUrl : 'App/view/games.html'
+			templateUrl : 'App/View/games.html'
 			
-		}).otherwise({
+		*/}).otherwise({
 			redirectTo : '/'
 		});
 }
