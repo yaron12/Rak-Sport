@@ -43,23 +43,25 @@
 		
 
 
+
 <div ng-controller="oneNews" data-ng-init="getData()">
 <div ng-show="loading" class="loading"> 
 	<h1>טוען  </h1>  </div>
 	
 	<ul>
-		<li ng-repeat="d in data1">
+		<li ng-repeat="d in data1 | limitTo:17">
 			<div class="articleNews">
 				<aside>
 					<img ng-src={{d.Image["0"].src}}  alt="{{d.data["0"].group["0"].Image["0"].alt}}">
 				</aside>
-				<h3>{{d["F14b link"]["0"].text}}</h3> </a> <h4>{{d["Gray link"]["0"].text}}</h4> </a>
+				<h3>{{d["F14b link"]["0"].text}}</h3> </a>
+				<h4>{{d["Gray link"]["0"].text}}</h4> </a>
 			</div>
 		</li>
 	</ul>
 </div>
 
-
+<!--
 <div ng-controller="sport5News" data-ng-init="getData()">
 <div ng-show="loading" class="loading"> 
 	<h1>טוען  </h1>  </div>
@@ -75,6 +77,45 @@
 		</li>
 	</ul>
 </div>
+
+
+<div ng-controller="ynetSportNews" data-ng-init="getData()">
+<div ng-show="loading" class="loading"> 
+	<h1>טוען  </h1>  </div>
+	
+	<ul>
+		<li ng-repeat="d in data1">
+			<div class="articleNews">
+				<aside>
+					<img ng-src={{d.Image["0"].src}}  alt="{{d.data["0"].group["0"].Image["0"].alt}}">
+				</aside>
+				<h3>{{d["F14b link"]["0"].text}}</h3> </a>
+				<h4>{{d["Gray link"]["0"].text}}</h4> </a>
+			</div>
+		</li>
+	</ul>
+</div>
+-->
+
+
+<div ng-controller="wallaSportNews" data-ng-init="getData()">
+<div ng-show="loading" class="loading"> 
+	<h1>טוען  </h1>  </div>
+	
+	<ul>
+		<li ng-repeat="d in data1">
+			<div class="articleNews">
+				<aside>
+					<img ng-src={{d.Image["0"].src}}  alt="{{d.data["0"].group["0"].Image["0"].alt}}">
+				</aside>
+				<h3>{{d["Texttitle value"]["0"].text}}</h3> </a>
+				<h4>{{d["Event description"]["0"].text}}</h4> </a>
+			</div>
+		</li>
+	</ul>
+</div>
+
+
 <!--	<ng-view></ng-view> -->
 
 		<footer>
